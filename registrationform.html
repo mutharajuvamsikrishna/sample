@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>forms</title>
+        <link rel="stylesheet"href="forms2.css">
+    <body>
+        <fieldset>
+            <legend>registration form</legend>
+            <form name="reg" onsubmit="return register()">
+                <!frst name.....>
+                <table>
+                    <tr>
+                        <td>First Name</td>
+                        <td>
+                            <input type="text"name="fname" placeholder="enter first name">
+                        </td>
+                        <td>
+                            <span id="fname1"></spam>
+                        </td>
+                    </tr>
+                    <!last name.....>
+                    <tr>
+                        <td>Last Name</td>
+                        <td>
+                            <input type="text"name="lname" placeholder="enter last name">
+                        </td>
+                        <td>
+                            <span id="lname1"></span>
+                        </td>
+                    </tr>
+                    <passwod.....>
+                    <tr>
+                        <td>Password</td>
+                        <td>
+                            <input type="password"name="pwd" placeholder="enter passwod">
+                        </td>
+                        <td>
+                            <span id="pwd1"></span>
+                        </td>
+                    </tr>
+                    <cpasswod.....>
+                    <tr>
+                        <td>Confirm Password</td>
+                        <td>
+                            <input type="password"name="cpwd" placeholder="enter confirm  passwod">
+                        </td>
+                        <td>
+                            <span id="cpwd1"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!mobile number..>
+                        <td>Mobile Number</td>
+                        <td>
+                            <input type="tel"name="mobile" placeholder="enter mobile number">
+                        </td>
+                        <td>
+                            <span id="mobile1"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <!email..>
+                        <td>email</td>
+                        <td>
+                            <input type="email"name="email" placeholder="enter email">
+                        </td>
+                        <td>
+                            <span id="email1"></span>
+                        </td>
+                    </tr>
+                    <!adress..>
+                    <tr>
+                        <td>Adress</td>
+                        <td>
+                            <input type="adress"name="uad" placeholder="enter adress">
+                        </td>
+                        <td>
+                            <span id="uad1"></span>
+                        </td>
+                    </tr>
+                    <!age..>
+                    <tr>
+                    <td>age</td>
+                    <td>
+                        <input type="number"name="age" placeholder="enter age">
+                    </td>
+                    <td>
+                        <span id="age1"></span>
+                    </td>
+                </tr>
+                <!gender..>
+                <tr>
+                    <td>gender</td>
+                    <td>
+                        <input type="radio"name="gender" value="male">Male
+                       <input type="radio"name="gender"value="female">Female
+                    </td>
+                    <td>
+                        <span id="gender1"></span>
+                    </td>
+                </tr>
+
+                <!date of birth...>
+                <tr>
+                    <td>dateofbirth</td>
+                    <td>
+                        <input type="date"name="dateofbirth">
+                    </td>
+                    <td>
+                        <span id="dateofbirth1"></span>
+                    </td>
+                </tr>
+
+                <!skills..>
+                <tr>
+                <td>skills</td>
+                <td>
+                    <input type="checkbox"name="skills" value="java">java
+                   <input type="checkbox"name="skills"value="python">python
+                </td>
+                <td>
+                    <span id="skills5"></span>
+                </td>
+                </tr>
+
+                
+                <tr>
+                    <td> 
+                    
+                    </td>
+                <td>
+                    <input type="checkbox"name="skills" value="html">html
+                    <input type="checkbox"name="skills"value="python">css
+        
+                </tr>
+                <!state...>
+                <tr>
+                <td>State</td>
+                <td>
+                    <select name="state">
+                    <option>search</option>
+                    
+                    <option>Ap</option>
+                    <option>Telangana</option>
+                    <option>Tamilanadu</option>
+                    <option>Maharastra</option>
+                    <option>Odisha</option>
+                    <option>Madhya pradesh</option>
+                    <option>Gujarat</option>
+                    <option>Rajastan</option>
+                </td>
+                <td>
+                    <span id="state5"></span>
+                </td>
+                </tr>
+            </select>
+            <!adhar.....>
+            <tr>
+                <td>Adhar</td>
+                <td>
+                    <input type="number"name="adhar" placeholder="enter adhar number">
+                </td>
+                <td>
+                    <span id="adhar1"></span>
+                </td>
+            </tr>
+            <!adharfile.....>
+            <tr>
+                <td>Upload</td>
+                <td>
+                    <input type="file"name="adharfile" placeholder="upload">
+                </td>
+                <td>
+                    <span id="adharfile1"></span>
+                </td>
+                
+                    </tr>
+                    <!pan...>
+                    <tr>
+                    <td>pan</td>
+                    <td>
+                        <input type="text"name="pan" placeholder="enter pan number">
+                    </td>
+                    <td>
+                        <span id="pan1"></span>
+                    </td>
+                </tr>
+                <!panfile.....>
+                <tr>
+                    <td>Upload</td>
+                    <td>
+                        <input type="file"name="panfile" placeholder="upload">
+                    </td>
+                    <td>
+                        <span id="panfile1"></span>
+                    </td>
+                    </tr>
+                    
+                    <tr>
+                    <td>Time</td>
+                    <td>
+                    <input type="time"name="time">
+                    </td>
+                    <td>
+                        <span id="time1"></span>
+                    </td>
+                    <tr>
+                        <td>
+                        <input type="submit"value="Register">
+                        </td>
+                        <td>
+                            <input type="reset"value="clear">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </fieldset>
+        <script>
+            function register(){
+                let fname = document.forms["reg"]["fname"].value;
+        let arr1 = [];
+        if(/^$/.test(fname)){
+            arr1.push("first name can't left blank");
+        }else if(!/[A-Za-z0-9$_]/.test(fname)){
+            arr1.push("must follow validation rules");
+        }
+        document.getElementById("fname1").innerHTML = arr1.join(",");
+
+    let lname=document.forms["reg"]["lname"].value;
+let arr2=[];
+if(/^$/.test(lname)){
+    arr2.push("last name couldnot be empty");
+}else if(!/[A-Za-z0-9]/.test(lname)){
+    arr2.push("follow validation rules");
+}
+
+document.getElementById("lname1").innerHTML = arr2.join(",");
+
+let pwd=document.forms["reg"]["pwd"].value;
+let arr3=[];
+if(/^$/.test(pwd)){
+    arr3.push("password couldnot be empty");
+    
+}else if(!/(?=.*[A-Z])(?=.*[0-9])(?=.*[a-z])(?=.*[@#%$&*]).{8,10}/.test(pwd)){
+    arr3.push("follow validation rules");
+}
+
+document.getElementById("pwd1").innerHTML = arr3.join(",");
+
+
+let cpwd=document.forms["reg"]["cpwd"].value;
+let arr4=[];
+if(/^$/.test(cpwd)){
+    arr4.push("confirm password couldnot be empty");
+    
+}else if(pwd!=cpwd){
+    arr4.push("pasword doesn't match");
+}
+document.getElementById("cpwd1").innerHTML = arr4.join(",");
+
+
+
+let mobile=document.forms["reg"]["mobile"].value;
+let arr5=[];
+if(/^$/.test(mobile)){
+    arr5.push("mobile couldnot be empty");
+    
+}else if(!/^\d{10}$/.test(mobile)){
+    arr5.push("follow validation rules");
+}
+document.getElementById("mobile1").innerHTML = arr5.join(",");
+
+
+let email=document.forms["reg"]["email"].value;
+let arr6=[];
+if(/^$/.test(email)){
+    arr6.push("email couldnot be empty");
+    
+}else if(!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){
+    arr6.push("follow validation rules");
+}
+document.getElementById("email1").innerHTML = arr6.join(",");
+
+
+let uad=document.forms["reg"]["uad"].value;
+let arr7=[];
+if(/^$/.test(uad)){
+    arr7.push("adress couldnot be empty");
+    
+}
+document.getElementById("uad1").innerHTML = arr7.join(",");
+
+let gender=document.forms["reg"]["gender"].value;
+let arr8=[];
+if(gender==""){
+    arr8.push("select gender");
+}
+document.getElementById("gender1").innerHTML = arr8.join(",");
+
+
+let skills=document.forms["reg"]["skills"].value;
+let arr22=[];
+if(skills==""){
+    arr22.push("select skills");
+}
+document.getElementById("skills5").innerHTML=arr22.join(",");
+
+let state=document.forms["reg"]["state"].value;
+let arr10=[];
+if(state==""){
+    arr10.push("select state");
+    document.getElementById("state5").innerHTML=arr10.join(",");
+}
+
+
+
+
+
+let pan=document.forms["reg"]["pan"].value;
+let arr11=[];
+if(/^$/.test(pan)){
+    arr11.push("pan couldnot be empty");
+}
+
+else if(!/(?=.*[A-Z])(?=.*[0-9]).{10,10}/.test(pan)){//pan card
+    arr11.push("Only CapsLock and Numerick values and Enter 10 Digits");
+}
+document.getElementById("pan1").innerHTML = arr11.join(",");
+
+
+let adharfile=document.forms["reg"]["adharfile"].value;
+let arr12=[];
+if(adharfile==""){
+    arr12.push("enter file");
+}
+document.getElementById("adharfile1").innerHTML = arr12.join(",");
+   
+let panfile=document.forms["reg"]["panfile"].value;
+let arr13=[];
+if(pan==""){
+    arr13.push("select pan");
+    document.getElementById("panfile1").innerHTML=arr13.join(",");
+}
+
+let adhar=document.forms["reg"]["adhar"].value;
+let arr14=[];
+if(/^$/.test(adhar)){
+    arr14.push("adhar couldnot be empty");
+    
+}else if(!/^\d{12}$/.test(adhar)){
+    arr14.push("enter12 Digit valid adhar number");
+}
+document.getElementById("adhar1").innerHTML = arr14.join(",");
+
+let dateofbirth=document.forms["reg"]["dateofbirth"].value;
+let arr15=[];
+if(dateofbirth==""){
+    arr15.push("enter date of birth");
+    document.getElementById("dateofbirth1").innerHTML=arr15.join(",");
+}
+
+let time=document.forms["reg"]["time"].value;
+let arr16=[];
+if(time==""){
+    arr16.push("select time");
+   
+}
+document.getElementById("time1").innerHTML=arr16.join(",");
+return false;
+  }
+</script>
+</body>
+</html>
